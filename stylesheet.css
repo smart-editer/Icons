@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Avengeance Heroic Avenger';
+    src: url('fonts/AvengeanceHeroicAvengerNormal.eot');
+    src: url('fonts/AvengeanceHeroicAvengerNormal.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvengeanceHeroicAvengerNormal.woff2') format('woff2'),
+        url('fonts/AvengeanceHeroicAvengerNormal.woff') format('woff'),
+        url('fonts/AvengeanceHeroicAvengerNormal.ttf') format('truetype'),
+        url('fonts/AvengeanceHeroicAvengerNormal.svg#AvengeanceHeroicAvengerNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bats';
+    src: url('fonts/Bats.eot');
+    src: url('fonts/Bats.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Bats.woff2') format('woff2'),
+        url('fonts/Bats.woff') format('woff'),
+        url('fonts/Bats.ttf') format('truetype'),
+        url('fonts/Bats.svg#Bats') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bronco';
+    src: url('fonts/BroncoRegular.eot');
+    src: url('fonts/BroncoRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BroncoRegular.woff2') format('woff2'),
+        url('fonts/BroncoRegular.woff') format('woff'),
+        url('fonts/BroncoRegular.ttf') format('truetype'),
+        url('fonts/BroncoRegular.svg#BroncoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Birds of a Feather';
+    src: url('fonts/BirdsofaFeather.eot');
+    src: url('fonts/BirdsofaFeather.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BirdsofaFeather.woff2') format('woff2'),
+        url('fonts/BirdsofaFeather.woff') format('woff'),
+        url('fonts/BirdsofaFeather.ttf') format('truetype'),
+        url('fonts/BirdsofaFeather.svg#BirdsofaFeather') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Buffalo Inline 2 Grunge';
+    src: url('fonts/BuffaloInline2Grunge.eot');
+    src: url('fonts/BuffaloInline2Grunge.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BuffaloInline2Grunge.woff2') format('woff2'),
+        url('fonts/BuffaloInline2Grunge.woff') format('woff'),
+        url('fonts/BuffaloInline2Grunge.ttf') format('truetype'),
+        url('fonts/BuffaloInline2Grunge.svg#BuffaloInline2Grunge') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'CAMPUS PERSONAL USE';
+    src: url('fonts/CAMPUSPERSONALUSE.eot');
+    src: url('fonts/CAMPUSPERSONALUSE.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CAMPUSPERSONALUSE.woff2') format('woff2'),
+        url('fonts/CAMPUSPERSONALUSE.woff') format('woff'),
+        url('fonts/CAMPUSPERSONALUSE.ttf') format('truetype'),
+        url('fonts/CAMPUSPERSONALUSE.svg#CAMPUSPERSONALUSE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Championship';
+    src: url('fonts/Championship.eot');
+    src: url('fonts/Championship.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Championship.woff2') format('woff2'),
+        url('fonts/Championship.woff') format('woff'),
+        url('fonts/Championship.ttf') format('truetype'),
+        url('fonts/Championship.svg#Championship') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chiro';
+    src: url('fonts/Chiro-Regular.eot');
+    src: url('fonts/Chiro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Chiro-Regular.woff2') format('woff2'),
+        url('fonts/Chiro-Regular.woff') format('woff'),
+        url('fonts/Chiro-Regular.ttf') format('truetype'),
+        url('fonts/Chiro-Regular.svg#Chiro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Cubic';
+    src: url('fonts/Cubic.eot');
+    src: url('fonts/Cubic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Cubic.woff2') format('woff2'),
+        url('fonts/Cubic.woff') format('woff'),
+        url('fonts/Cubic.ttf') format('truetype'),
+        url('fonts/Cubic.svg#Cubic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crackvetica';
+    src: url('fonts/Crackvetica.eot');
+    src: url('fonts/Crackvetica.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Crackvetica.woff2') format('woff2'),
+        url('fonts/Crackvetica.woff') format('woff'),
+        url('fonts/Crackvetica.ttf') format('truetype'),
+        url('fonts/Crackvetica.svg#Crackvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('fonts/DS-Digital.eot');
+    src: url('fonts/DS-Digital.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DS-Digital.woff2') format('woff2'),
+        url('fonts/DS-Digital.woff') format('woff'),
+        url('fonts/DS-Digital.ttf') format('truetype'),
+        url('fonts/DS-Digital.svg#DS-Digital') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Death Record';
+    src: url('fonts/DeathRecord.eot');
+    src: url('fonts/DeathRecord.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DeathRecord.woff2') format('woff2'),
+        url('fonts/DeathRecord.woff') format('woff'),
+        url('fonts/DeathRecord.ttf') format('truetype'),
+        url('fonts/DeathRecord.svg#DeathRecord') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'E1234';
+    src: url('fonts/E1234.eot');
+    src: url('fonts/E1234.eot?#iefix') format('embedded-opentype'),
+        url('fonts/E1234.woff2') format('woff2'),
+        url('fonts/E1234.woff') format('woff'),
+        url('fonts/E1234.ttf') format('truetype'),
+        url('fonts/E1234.svg#E1234') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Evanescent';
+    src: url('fonts/Evanescent.eot');
+    src: url('fonts/Evanescent.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Evanescent.woff2') format('woff2'),
+        url('fonts/Evanescent.woff') format('woff'),
+        url('fonts/Evanescent.ttf') format('truetype'),
+        url('fonts/Evanescent.svg#Evanescent') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'fotograami-hearts01';
+    src: url('fonts/fotograami-hearts01.eot');
+    src: url('fonts/fotograami-hearts01.eot?#iefix') format('embedded-opentype'),
+        url('fonts/fotograami-hearts01.woff2') format('woff2'),
+        url('fonts/fotograami-hearts01.woff') format('woff'),
+        url('fonts/fotograami-hearts01.ttf') format('truetype'),
+        url('fonts/fotograami-hearts01.svg#fotograami-hearts01') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giver Made';
+    src: url('fonts/GiverMade-Italic.eot');
+    src: url('fonts/GiverMade-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GiverMade-Italic.woff2') format('woff2'),
+        url('fonts/GiverMade-Italic.woff') format('woff'),
+        url('fonts/GiverMade-Italic.ttf') format('truetype'),
+        url('fonts/GiverMade-Italic.svg#GiverMade-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabella';
+    src: url('fonts/Gabella-Regular.eot');
+    src: url('fonts/Gabella-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gabella-Regular.woff2') format('woff2'),
+        url('fonts/Gabella-Regular.woff') format('woff'),
+        url('fonts/Gabella-Regular.ttf') format('truetype'),
+        url('fonts/Gabella-Regular.svg#Gabella-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Happy Halloween';
+    src: url('fonts/HappyHalloweenRegular.eot');
+    src: url('fonts/HappyHalloweenRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HappyHalloweenRegular.woff2') format('woff2'),
+        url('fonts/HappyHalloweenRegular.woff') format('woff'),
+        url('fonts/HappyHalloweenRegular.ttf') format('truetype'),
+        url('fonts/HappyHalloweenRegular.svg#HappyHalloweenRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Horse';
+    src: url('fonts/Horse.eot');
+    src: url('fonts/Horse.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Horse.woff2') format('woff2'),
+        url('fonts/Horse.woff') format('woff'),
+        url('fonts/Horse.ttf') format('truetype'),
+        url('fonts/Horse.svg#Horse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MaxInitiale';
+    src: url('fonts/MaxInitiale.eot');
+    src: url('fonts/MaxInitiale.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MaxInitiale.woff2') format('woff2'),
+        url('fonts/MaxInitiale.woff') format('woff'),
+        url('fonts/MaxInitiale.ttf') format('truetype'),
+        url('fonts/MaxInitiale.svg#MaxInitiale') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metal Gear Solid 2';
+    src: url('fonts/MetalGearSolid2.eot');
+    src: url('fonts/MetalGearSolid2.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MetalGearSolid2.woff2') format('woff2'),
+        url('fonts/MetalGearSolid2.woff') format('woff'),
+        url('fonts/MetalGearSolid2.ttf') format('truetype'),
+        url('fonts/MetalGearSolid2.svg#MetalGearSolid2') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Modern Prestige DEMO';
+    src: url('fonts/ModernPrestigeDEMO.eot');
+    src: url('fonts/ModernPrestigeDEMO.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ModernPrestigeDEMO.woff2') format('woff2'),
+        url('fonts/ModernPrestigeDEMO.woff') format('woff'),
+        url('fonts/ModernPrestigeDEMO.ttf') format('truetype'),
+        url('fonts/ModernPrestigeDEMO.svg#ModernPrestigeDEMO') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Melted Monster';
+    src: url('fonts/MeltedMonster.eot');
+    src: url('fonts/MeltedMonster.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MeltedMonster.woff2') format('woff2'),
+        url('fonts/MeltedMonster.woff') format('woff'),
+        url('fonts/MeltedMonster.ttf') format('truetype'),
+        url('fonts/MeltedMonster.svg#MeltedMonster') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Rust Extras Demo Icons';
+    src: url('fonts/NexaRustExtrasDemo-Icons.eot');
+    src: url('fonts/NexaRustExtrasDemo-Icons.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NexaRustExtrasDemo-Icons.woff2') format('woff2'),
+        url('fonts/NexaRustExtrasDemo-Icons.woff') format('woff'),
+        url('fonts/NexaRustExtrasDemo-Icons.ttf') format('truetype'),
+        url('fonts/NexaRustExtrasDemo-Icons.svg#NexaRustExtrasDemo-Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'M Ponderosa';
+    src: url('fonts/MPonderosa.eot');
+    src: url('fonts/MPonderosa.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MPonderosa.woff2') format('woff2'),
+        url('fonts/MPonderosa.woff') format('woff'),
+        url('fonts/MPonderosa.ttf') format('truetype'),
+        url('fonts/MPonderosa.svg#MPonderosa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
