@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, noarchive">
     <meta name="format-detection" content="telephone=no">
     <title>Transfonter demo</title>
-    <link href="font.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
     <style>
 
         body {
@@ -57,7 +57,9 @@
             margin: 0 -20px 12px -20px;
         }
         
-        pre {
+        .usage {
+            width: 100%;
+            height: 110px;
             display: block;
             padding: 9px;
             margin: 0 0 12px;
@@ -71,6 +73,25 @@
             border: 1px solid #ccc;
             overflow-x: auto;
             border-radius: 4px;
+            outline: none;
+        }
+        .preloaded{
+            width: 100%;
+            height: 80px;
+            display: block;
+            padding: 9px;
+            margin: 0 0 12px;
+            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+            font-size: 13px;
+            line-height: 1.428571429;
+            color: #333;
+            font-weight: normal;
+            font-style: normal;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+            border-radius: 4px;
+            outline: none;    
         }
         /* responsive */
         @media (max-width: 959px) {
@@ -85,290 +106,292 @@
 <div class="page">
     <div class="demo">
         <h1 style="font-family: 'Avengeance Heroic Avenger'; font-weight: normal; font-style: normal;">Avengeance Heroic Avenger Normal</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage0" class="usage" readonly>.your-style {
     font-family: 'Avengeance Heroic Avenger';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;AvengeanceHeroicAvengerNormal.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
+    /* replace class name .your-style */
+}
+</textarea>
+        <textarea id="preloaded0" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;AvengeanceHeroicAvengerNormal.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
         <div class="font-container" style="font-family: 'Avengeance Heroic Avenger';">
-        </div>
     </div>
 
 
 
     <div class="demo">
         <h1 style="font-family: 'Bronco'; font-weight: normal; font-style: normal;">Bronco</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage1" class="usage" readonly>.your-style {
     font-family: 'Bronco';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;BroncoRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Bronco'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded1" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;BroncoRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
+
     </div>
 
 
 
     <div class="demo">
         <h1 style="font-family: 'Buffalo Inline 2 Grunge'; font-weight: normal; font-style: normal;">Buffalo Inline 2 Grunge</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage2" class="usage" readonly>.your-style {
     font-family: 'Buffalo Inline 2 Grunge';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;BuffaloInline2Grunge.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Buffalo Inline 2 Grunge'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded2" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;BuffaloInline2Grunge.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
     <div class="demo">
         <h1 style="font-family: 'CAMPUS PERSONAL USE'; font-weight: normal; font-style: normal;">CAMPUS PERSONAL USE</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage3" class="usage" readonly>.your-style {
     font-family: 'CAMPUS PERSONAL USE';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;CAMPUSPERSONALUSE.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'CAMPUS PERSONAL USE'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded3" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;CAMPUSPERSONALUSE.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
+
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Championship'; font-weight: normal; font-style: normal;">Championship</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage4" class="usage" readonly>.your-style {
     font-family: 'Championship';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Championship.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Championship'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded4" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Championship.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Chiro'; font-weight: normal; font-style: normal;">Chiro Regular</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage5" class="usage" readonly>.your-style {
     font-family: 'Chiro';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Chiro-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Chiro'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded5" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Chiro-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
     <div class="demo">
         <h1 style="font-family: 'Cubic'; font-weight: normal; font-style: normal;">Cubics</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage6" class="usage" readonly>.your-style {
     font-family: 'Cubic';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Cubic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Cubic'; font-weight: normal; font-style: normal;">
-  </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded6" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Cubic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Crackvetica'; font-weight: normal; font-style: normal;">Crackvetica</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage7" class="usage" readonly>.your-style {
     font-family: 'Crackvetica';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Crackvetica.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Crackvetica'; font-weight: normal; font-style: normal;">
-     </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded7" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Crackvetica.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
     <div class="demo">
         <h1 style="font-family: 'DS-Digital'; font-weight: normal; font-style: normal;">DS-Digital</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage8" class="usage" readonly>.your-style {
     font-family: 'DS-Digital';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;DS-Digital.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'DS-Digital'; font-weight: normal; font-style: normal;">
-      </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded8" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;DS-Digital.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Death Record'; font-weight: normal; font-style: normal;">Death Record</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage9" class="usage" readonly>.your-style {
     font-family: 'Death Record';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;DeathRecord.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Death Record'; font-weight: normal; font-style: normal;">
-      </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded9" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;DeathRecord.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'E1234'; font-weight: normal; font-style: normal;">E1234</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage10" class="usage" readonly>.your-style {
     font-family: 'E1234';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;E1234.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'E1234'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded10" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;E1234.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Evanescent'; font-weight: normal; font-style: normal;">Evanescence Series B</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage11" class="usage" readonly>.your-style {
     font-family: 'Evanescent';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Evanescent.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Evanescent'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded11" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Evanescent.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
 
     <div class="demo">
         <h1 style="font-family: 'Buffalo Inline 2 Grunge'; font-weight: normal; font-style: normal;">fotograami-hearts01</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage12" class="usage" readonly>.your-style {
     font-family: 'fotograami-hearts01';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;fotograami-hearts01.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'fotograami-hearts01'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded12" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;fotograami-hearts01.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Giver Made'; font-weight: normal; font-style: italic;">Giver Made Italic</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage13" class="usage" readonly>.your-style {
     font-family: 'Giver Made';
     font-weight: normal;
     font-style: italic;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;GiverMade-Italic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Giver Made'; font-weight: normal; font-style: italic;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded13" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;GiverMade-Italic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Gabella'; font-weight: normal; font-style: normal;">Gabella Regular</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage14" class="usage" readonly>.your-style {
     font-family: 'Gabella';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;Gabella-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Gabella'; font-weight: normal; font-style: normal;">
-      </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded14" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;Gabella-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Happy Halloween'; font-weight: normal; font-style: normal;">Happy Halloween</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage15" class="usage" readonly>.your-style {
     font-family: 'Happy Halloween';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;HappyHalloweenRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Happy Halloween'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded15" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;HappyHalloweenRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
 
     <div class="demo">
         <h1 style="font-family: 'MaxInitiale'; font-weight: normal; font-style: normal;">MaxInitiale</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage16" class="usage" readonly>.your-style {
     font-family: 'MaxInitiale';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;MaxInitiale.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'MaxInitiale'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded16" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;MaxInitiale.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Metal Gear Solid 2'; font-weight: 100; font-style: normal;">Metal Gear Solid 2</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage17" class="usage" readonly>.your-style {
     font-family: 'Metal Gear Solid 2';
     font-weight: 100;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;MetalGearSolid2.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Metal Gear Solid 2'; font-weight: 100; font-style: normal;">
-      </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded17" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;MetalGearSolid2.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Modern Prestige DEMO'; font-weight: normal; font-style: italic;">Modern Prestige DEMO</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage18" class="usage" readonly>.your-style {
     font-family: 'Modern Prestige DEMO';
     font-weight: normal;
     font-style: italic;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;ModernPrestigeDEMO.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Modern Prestige DEMO'; font-weight: normal; font-style: italic;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded18" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;ModernPrestigeDEMO.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
     <div class="demo">
         <h1 style="font-family: 'Melted Monster'; font-weight: normal; font-style: normal;">Melted Monster</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage19" class="usage" readonly>.your-style {
     font-family: 'Melted Monster';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;MeltedMonster.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'Melted Monster'; font-weight: normal; font-style: normal;">
-        </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded19" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;MeltedMonster.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 
     <div class="demo">
         <h1 style="font-family: 'M Ponderosa'; font-weight: normal; font-style: normal;">M Ponderosa</h1>
-        <pre title="Usage">.your-style {
+       <textarea id="usage20" class="usage" readonly>.your-style {
     font-family: 'M Ponderosa';
     font-weight: normal;
     font-style: normal;
-}</pre>
-        <pre title="Preload (optional)">
-&lt;link rel=&quot;preload&quot; href=&quot;MPonderosa.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</pre>
-        <div class="font-container" style="font-family: 'M Ponderosa'; font-weight: normal; font-style: normal;">
-    </div>
+    /* replace class name .your-style */
+}</textarea>
+        <textarea id="preloaded20" class="preloaded" readonly>
+&lt;link rel=&quot;preload&quot; href=&quot;MPonderosa.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
     </div>
 
 </div>
 </body>
-    </html>
-    
+  <script>
+        // Function to copy text to clipboard
+        function copyToClipboard(id) {
+            const textarea = document.getElementById(id);
+            textarea.select();
+            document.execCommand('copy');
+            alert("Copied to clipboard: " + textarea.value);
+        }
+
+        // Adding event listeners to textarea elements
+for (let i = 0; i <= 20; i++) {
+    document.getElementById('usage' + i).addEventListener('click', function() {
+        copyToClipboard('usage' + i);
+    });
+
+    document.getElementById('preloaded' + i).addEventListener('click', function() {
+        copyToClipboard('preloaded' + i);
+    });
+}
+    </script>
+</html>
