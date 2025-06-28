@@ -1,397 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, noarchive">
-    <meta name="format-detection" content="telephone=no">
-    <title>Transfonter demo</title>
-    <link href="font.css" rel="stylesheet">
-    <style>
-
-        body {
-            line-height: 1;
-        }
-        ol, ul {
-            list-style: none;
-        }
-        blockquote, q {
-            quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        /* demo styles */
-        body {
-            background: #f0f0f0;
-            color: #000;
-        }
-        .page {
-            background: #fff;
-            width: 920px;
-            margin: 0 auto;
-            padding: 20px 20px 0 20px;
-            overflow: hidden;
-        }
-        .font-container {
-            overflow-x: auto;
-            overflow-y: hidden;
-            margin-bottom: 40px;
-            line-height: 1.3;
-            white-space: nowrap;
-            padding-bottom: 5px;
-        }
-        h1 {
-            position: relative;
-            background: #444;
-            font-size: 16px;
-            color: #fff;
-            padding: 10px 20px;
-            margin: 0 -20px 12px -20px;
-        }
-        
-        .usage {
-            width: 100%;
-            height: 110px;
-            display: block;
-            padding: 9px;
-            margin: 0 0 12px;
-            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-            font-size: 13px;
-            line-height: 1.428571429;
-            color: #333;
-            font-weight: normal;
-            font-style: normal;
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            overflow-x: auto;
-            border-radius: 4px;
-            outline: none;
-        }
-        .preloaded{
-            width: 100%;
-            height: 80px;
-            display: block;
-            padding: 9px;
-            margin: 0 0 12px;
-            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-            font-size: 13px;
-            line-height: 1.428571429;
-            color: #333;
-            font-weight: normal;
-            font-style: normal;
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            overflow-x: auto;
-            border-radius: 4px;
-            outline: none;    
-        }
-        /* responsive */
-        @media (max-width: 959px) {
-            .page {
-                width: auto;
-                margin: 0;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome Icons with TailwindCSS v3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<div class="page">
-    <div class="demo">
-        <h1 style="font-family: 'Avengeance Heroic Avenger'; font-weight: normal; font-style: normal;">Avengeance Heroic Avenger Normal</h1>
-       <textarea id="usage0" class="usage" readonly>.your-style {
-    font-family: 'Avengeance Heroic Avenger';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}
-</textarea>
-        <textarea id="preloaded0" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;AvengeanceHeroicAvengerNormal.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-        <div class="font-container" style="font-family: 'Avengeance Heroic Avenger';">
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Font Awesome Icons with TailwindCSS</h1>
+            <p class="text-gray-600">Click any icon to copy its HTML code</p>
+        </div>
+
+        <!-- Icon Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 mb-12">
+            <!-- User Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-user text-blue-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-user text-blue-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-user</p>
+                </div>
+            </div>
+
+            <!-- Home Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-home text-green-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-home text-green-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-home</p>
+                </div>
+            </div>
+
+            <!-- Heart Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-heart text-red-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-heart text-red-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-heart</p>
+                </div>
+            </div>
+
+            <!-- Star Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-star text-yellow-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-star text-yellow-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-star</p>
+                </div>
+            </div>
+
+            <!-- Envelope Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-envelope text-purple-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-envelope text-purple-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-envelope</p>
+                </div>
+            </div>
+
+            <!-- Cog Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-cog text-gray-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-cog text-gray-500 text-3xl mb-3 group-hover:scale-110 transition-transform group-hover:rotate-45"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-cog</p>
+                </div>
+            </div>
+
+            <!-- Phone Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-phone text-indigo-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-phone text-indigo-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-phone</p>
+                </div>
+            </div>
+
+            <!-- Calendar Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-calendar text-teal-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-calendar text-teal-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-calendar</p>
+                </div>
+            </div>
+
+            <!-- Location Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-map-marker-alt text-pink-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-map-marker-alt text-pink-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-map-marker-alt</p>
+                </div>
+            </div>
+
+            <!-- Search Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-search text-orange-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-search text-orange-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-search</p>
+                </div>
+            </div>
+
+            <!-- Bell Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-bell text-amber-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-bell text-amber-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-bell</p>
+                </div>
+            </div>
+
+            <!-- Download Icon -->
+            <div class="icon-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group" onclick="copyCode('&lt;i class=&quot;fas fa-download text-emerald-500 text-2xl&quot;&gt;&lt;/i&gt;')">
+                <div class="text-center">
+                    <i class="fas fa-download text-emerald-500 text-3xl mb-3 group-hover:scale-110 transition-transform"></i>
+                    <p class="text-sm text-gray-600 font-medium">fa-download</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Examples -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Usage Examples</h2>
+            
+            <div class="space-y-6">
+                <!-- Basic Icon -->
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="font-semibold text-gray-700 mb-2">Basic Icon</h3>
+                    <div class="flex items-center space-x-4 mb-2">
+                        <i class="fas fa-user text-blue-500 text-xl"></i>
+                        <span class="text-gray-600">Result</span>
+                    </div>
+                    <code class="text-sm bg-gray-800 text-green-400 p-2 rounded block">
+                        &lt;i class="fas fa-user text-blue-500 text-xl"&gt;&lt;/i&gt;
+                    </code>
+                </div>
+
+                <!-- Icon with Button -->
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="font-semibold text-gray-700 mb-2">Icon with Button</h3>
+                    <div class="flex items-center space-x-4 mb-2">
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
+                            <i class="fas fa-download"></i>
+                            <span>Download</span>
+                        </button>
+                        <span class="text-gray-600">Result</span>
+                    </div>
+                    <code class="text-sm bg-gray-800 text-green-400 p-2 rounded block">
+                        &lt;button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2"&gt;<br>
+                        &nbsp;&nbsp;&lt;i class="fas fa-download"&gt;&lt;/i&gt;<br>
+                        &nbsp;&nbsp;&lt;span&gt;Download&lt;/span&gt;<br>
+                        &lt;/button&gt;
+                    </code>
+                </div>
+
+                <!-- Icon Sizes -->
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="font-semibold text-gray-700 mb-2">Different Sizes</h3>
+                    <div class="flex items-center space-x-4 mb-2">
+                        <i class="fas fa-star text-yellow-500 text-sm"></i>
+                        <i class="fas fa-star text-yellow-500 text-base"></i>
+                        <i class="fas fa-star text-yellow-500 text-xl"></i>
+                        <i class="fas fa-star text-yellow-500 text-2xl"></i>
+                        <i class="fas fa-star text-yellow-500 text-3xl"></i>
+                        <span class="text-gray-600">Result</span>
+                    </div>
+                    <code class="text-sm bg-gray-800 text-green-400 p-2 rounded block">
+                        &lt;i class="fas fa-star text-yellow-500 text-sm"&gt;&lt;/i&gt;<br>
+                        &lt;i class="fas fa-star text-yellow-500 text-base"&gt;&lt;/i&gt;<br>
+                        &lt;i class="fas fa-star text-yellow-500 text-xl"&gt;&lt;/i&gt;<br>
+                        &lt;i class="fas fa-star text-yellow-500 text-2xl"&gt;&lt;/i&gt;<br>
+                        &lt;i class="fas fa-star text-yellow-500 text-3xl"&gt;&lt;/i&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copy Notification -->
+        <div id="copyNotification" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check"></i>
+                <span>Code copied to clipboard!</span>
+            </div>
+        </div>
     </div>
 
-
-
-    <div class="demo">
-        <h1 style="font-family: 'Bronco'; font-weight: normal; font-style: normal;">Bronco</h1>
-       <textarea id="usage1" class="usage" readonly>.your-style {
-    font-family: 'Bronco';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded1" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;BroncoRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-
-    </div>
-
-
-
-    <div class="demo">
-        <h1 style="font-family: 'Buffalo Inline Grunge'; font-weight: normal; font-style: normal;">Buffalo Inline Grunge</h1>
-       <textarea id="usage2" class="usage" readonly>.your-style {
-    font-family: 'Buffalo Inline Grunge';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded2" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;BuffaloInline2Grunge.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-    <div class="demo">
-        <h1 style="font-family: 'CAMPUS PERSONAL USE'; font-weight: normal; font-style: normal;">CAMPUS PERSONAL USE</h1>
-       <textarea id="usage3" class="usage" readonly>.your-style {
-    font-family: 'CAMPUS PERSONAL USE';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded3" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;CAMPUSPERSONALUSE.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Championship'; font-weight: normal; font-style: normal;">Championship</h1>
-       <textarea id="usage4" class="usage" readonly>.your-style {
-    font-family: 'Championship';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded4" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Championship.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Chiro'; font-weight: normal; font-style: normal;">Chiro Regular</h1>
-       <textarea id="usage5" class="usage" readonly>.your-style {
-    font-family: 'Chiro';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded5" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Chiro-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-    <div class="demo">
-        <h1 style="font-family: 'Cubic'; font-weight: normal; font-style: normal;">Cubics</h1>
-       <textarea id="usage6" class="usage" readonly>.your-style {
-    font-family: 'Cubic';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded6" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Cubic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Crackvetica'; font-weight: normal; font-style: normal;">Crackvetica</h1>
-       <textarea id="usage7" class="usage" readonly>.your-style {
-    font-family: 'Crackvetica';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded7" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Crackvetica.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-    <div class="demo">
-        <h1 style="font-family: 'DS-Digital'; font-weight: normal; font-style: normal;">DS-Digital</h1>
-       <textarea id="usage8" class="usage" readonly>.your-style {
-    font-family: 'DS-Digital';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded8" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;DS-Digital.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Death Record'; font-weight: normal; font-style: normal;">Death Record</h1>
-       <textarea id="usage9" class="usage" readonly>.your-style {
-    font-family: 'Death Record';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded9" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;DeathRecord.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'E1234'; font-weight: normal; font-style: normal;">E1234</h1>
-       <textarea id="usage10" class="usage" readonly>.your-style {
-    font-family: 'E1234';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded10" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;E1234.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Evanescent'; font-weight: normal; font-style: normal;">Evanescence Series B</h1>
-       <textarea id="usage11" class="usage" readonly>.your-style {
-    font-family: 'Evanescent';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded11" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Evanescent.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-
-    <div class="demo">
-        <h1 style="font-family: 'Buffalo Inline 2 Grunge'; font-weight: normal; font-style: normal;">fotograami-hearts01</h1>
-       <textarea id="usage12" class="usage" readonly>.your-style {
-    font-family: 'fotograami-hearts01';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded12" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;fotograami-hearts01.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Giver Made'; font-weight: normal; font-style: italic;">Giver Made Italic</h1>
-       <textarea id="usage13" class="usage" readonly>.your-style {
-    font-family: 'Giver Made';
-    font-weight: normal;
-    font-style: italic;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded13" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;GiverMade-Italic.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Gabella'; font-weight: normal; font-style: normal;">Gabella Regular</h1>
-       <textarea id="usage14" class="usage" readonly>.your-style {
-    font-family: 'Gabella';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded14" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;Gabella-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Happy Halloween'; font-weight: normal; font-style: normal;">Happy Halloween</h1>
-       <textarea id="usage15" class="usage" readonly>.your-style {
-    font-family: 'Happy Halloween';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded15" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;HappyHalloweenRegular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-
-    <div class="demo">
-        <h1 style="font-family: 'MaxInitiale'; font-weight: normal; font-style: normal;">MaxInitiale</h1>
-       <textarea id="usage16" class="usage" readonly>.your-style {
-    font-family: 'MaxInitiale';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded16" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;MaxInitiale.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Metal Gear Solid 2'; font-weight: 100; font-style: normal;">Metal Gear Solid 2</h1>
-       <textarea id="usage17" class="usage" readonly>.your-style {
-    font-family: 'Metal Gear Solid 2';
-    font-weight: 100;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded17" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;MetalGearSolid2.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Modern Prestige DEMO'; font-weight: normal; font-style: italic;">Modern Prestige DEMO</h1>
-       <textarea id="usage18" class="usage" readonly>.your-style {
-    font-family: 'Modern Prestige DEMO';
-    font-weight: normal;
-    font-style: italic;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded18" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;ModernPrestigeDEMO.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-    <div class="demo">
-        <h1 style="font-family: 'Melted Monster'; font-weight: normal; font-style: normal;">Melted Monster</h1>
-       <textarea id="usage19" class="usage" readonly>.your-style {
-    font-family: 'Melted Monster';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded19" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;MeltedMonster.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-
-    <div class="demo">
-        <h1 style="font-family: 'M Ponderosa'; font-weight: normal; font-style: normal;">M Ponderosa</h1>
-       <textarea id="usage20" class="usage" readonly>.your-style {
-    font-family: 'M Ponderosa';
-    font-weight: normal;
-    font-style: normal;
-    /* replace class name .your-style */
-}</textarea>
-        <textarea id="preloaded20" class="preloaded" readonly>
-&lt;link rel=&quot;preload&quot; href=&quot;MPonderosa.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</textarea>
-    </div>
-
-</div>
-</body>
-  <script>
-        // Function to copy text to clipboard
-        function copyToClipboard(id) {
-            const textarea = document.getElementById(id);
-            textarea.select();
-            document.execCommand('copy');
-            alert("Copied to clipboard: " + textarea.value);
+    <script>
+        function copyCode(code) {
+            // Decode HTML entities
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = code;
+            const decodedCode = tempDiv.textContent || tempDiv.innerText;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(decodedCode).then(() => {
+                showNotification();
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = decodedCode;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showNotification();
+            });
         }
 
-        // Adding event listeners to textarea elements
-for (let i = 0; i <= 20; i++) {
-    document.getElementById('usage' + i).addEventListener('click', function() {
-        copyToClipboard('usage' + i);
-    });
+        function showNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.classList.remove('translate-x-full');
+            notification.classList.add('translate-x-0');
+            
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                notification.classList.remove('translate-x-0');
+            }, 2000);
+        }
 
-    document.getElementById('preloaded' + i).addEventListener('click', function() {
-        copyToClipboard('preloaded' + i);
-    });
-}
+        // Add hover effect to icon cards
+        document.querySelectorAll('.icon-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('transform', '-translate-y-1');
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('transform', '-translate-y-1');
+            });
+        });
     </script>
-</html>
+</body>
+    </html>
